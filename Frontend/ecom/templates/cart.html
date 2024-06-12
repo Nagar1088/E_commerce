@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Main Contents -->
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+
+<div class="container">
+    <h1 class="my-4">Shopping Cart</h1>
+ 
+    <div class="table-responsive">
+        <table class="table table-bordered cart-table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col" class="Image-clmn">Image</th>
+                    <th scope="col" class="Product-clmn">Product Name</th>
+                    <th scope="col" class="quantity-clmn">Quantity</th>
+                    <th scope="col" class="Price-clmn">Price</th>
+                    <th scope="col" class="Total-clmn">Total</th>
+                    <th scope="col" class="Remove-clmn">Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center"><img src="https://assets.ajio.com/medias/sys_master/root/20240515/AGt4/6644ca4e16fd2c6e6a094423/-473Wx593H-469587380-blue-MODEL4.jpg" alt="Product 1" class="img-fluid img-style"></td>
+                    <td><h6>LEVIS</h6><p>Men Slim Fit Shirt</p></td>
+                    <td>
+                        <input type="number" class="form-control" value="1">
+                    </td>
+                    <td>₹1000.00</td>
+                    <td>₹1000.00</td>
+                    <td><button class="btn btn-danger">Remove</button></td>
+                </tr>
+                <tr>
+                    <td class="text-center"><img src="https://assets.ajio.com/medias/sys_master/root/20240429/My5q/662eaaee05ac7d77bb304449/-473Wx593H-467284525-black-MODEL.jpg" alt="Product 2" class="img-fluid img-style"></td>
+                    <td><h6>BERRYLICIOUS</h6><p>Embroidered Top</p></td>
+                    <td>
+                        <input type="number" class="form-control" value="2">
+                    </td>
+                    <td>₹1000.00</td>
+                    <td>₹2000.00</td>
+                    <td><button class="btn btn-danger">Remove</button></td>
+                </tr>
+                <tr>
+                    <td class="text-center"><img src="https://assets.ajio.com/medias/sys_master/root/20240202/q66g/65bd184b16fd2c6e6ad4e0ff/-473Wx593H-466961571-maroon-MODEL.jpg" alt="Product 1" class="img-fluid img-style"></td>
+                    <td><h6>LEVIS</h6><p>Men Slim Fit Shirt</p></td>
+                    <td>
+                        <input type="number" class="form-control" value="1">
+                    </td>
+                    <td>₹1000.00</td>
+                    <td>₹1000.00</td>
+                    <td><button class="btn btn-danger">Remove</button></td>
+                </tr>
+                <tr>
+                    <td class="text-center"><img src="https://assets.ajio.com/medias/sys_master/root/20240531/eOzs/6659eaaa05ac7d77bb937eaf/-473Wx593H-469623220-black-MODEL5.jpg" alt="Product 2" class="img-fluid img-style"></td>
+                    <td><h6>BERRYLICIOUS</h6><p>Embroidered Top With Jeans</p></td>
+                    <td>
+                        <input type="number" class="form-control" value="2">
+                    </td>
+                    <td>₹1000.00</td>
+                    <td>₹2000.00</td>
+                    <td><button class="btn btn-danger">Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div> 
+    <div class="cart-footer text-right mb-3">
+        <h3>Total: ₹6000.00</h3>
+        <a href="/details"><button class="btn btn-primary">Proceed to Checkout</button></a>
+    </div>
+</div>
+
+
+{% endblock %}
